@@ -1,0 +1,30 @@
+#include <stdio.h>
+int main()
+{
+	int x, y= 0;
+	scanf("%d %d", &x, &y);
+
+	if (x == 0) {
+		if (y >= 45) {
+			y = y - 45;
+		}
+		else {
+			x = 23;
+			y = y + 15;
+		}
+	}
+
+	else {
+		if (y >= 45) {
+			y = y - 45;
+		}
+		else {
+			x = x - 1;
+			y = y + 15;
+		}
+	}
+	
+	printf("%d %d", x, y);
+
+	return 0;
+}
